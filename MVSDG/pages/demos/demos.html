@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>demos</title>
+
+    <link href="demos.css" rel="stylesheet" />
+    <script src="demos.js"></script>
+</head>
+<body>
+    <div class="demos fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">demos</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <p>Content goes here.</p>
+
+            <p>Ratings Control</p>
+            <div data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4, onchange: Demos.changeRating}"></div>
+            <div id="ratingsMessage"></div>
+            <br/><br/>
+
+            <p>Date Picker Control</p>
+            <div data-win-control="WinJS.UI.DatePicker"></div>
+            <br /><br />
+
+            <p>Toggle Switch Control</p>
+            <div id="wifiToggle" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'WiFi', checked: true, onchange: Demos.toggleWifi}"></div>
+            <div id="toggleMessage"></div>
+            <br/><br/>
+
+
+        </section>
+    </div>
+</body>
+</html>

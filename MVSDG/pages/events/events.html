@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>events</title>
+
+    <link href="events.css" rel="stylesheet" />
+    <script src="events.js"></script>
+</head>
+<body>
+    <div class="events fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">events</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+
+            <!-- Header Template -->
+            <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+                <h3>MVSDG Events</h3>
+            </div>
+
+            <!-- Item Template -->
+            <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+                <h4 data-win-bind="innerText:name"></h4>
+                <h5>Date: <span data-win-bind="innerText:date"></span>, <span data-win-bind="innerText:time"></span></h5>
+                <h5>Location: <span data-win-bind="innerText:location"></span></h5>
+                <h5>Sponsor: <span data-win-bind="innerText:sponsor"></span></h5>
+                <h5>Description: <span data-win-bind="innerText:description"></span></h5>
+            </div>
+
+            <!-- List Control -->
+            <div data-win-control="WinJS.UI.ListView" data-win-options="{
+                itemDataSource:MVSDG.Events.eventsList.dataSource,
+                itemTemplate:select('.itemtemplate'),
+                itemHeaderTemplate:select('.headertemplate'),
+                selectionMode: 'none',
+                tapBehavior: 'none',
+                layout: { type: WinJS.UI.ListLayout }
+                }">
+            </div>
+
+        </section>
+    </div>
+
+    <div id="eventsAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom'}">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdAdd', icon:'add', section:'primary'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdEdit', icon:'edit', section:'primary'}"></button>
+    </div>
+
+</body>
+</html>

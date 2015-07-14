@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MVSDG</title>
+
+    <!-- WinJS references -->
+    <!-- To get the latest version of WinJS, go to: http://go.microsoft.com/fwlink/?LinkId=533245 -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/WinJS.js"></script>
+
+    <!-- MVSDG references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="navbar" data-win-control="WinJS.UI.NavBar" data-win-options="{placement: 'top'}">
+        <div id="globalnav" data-win-control="WinJS.UI.NavBarContainer" data-win-options="{ layout: 'vertical'}">
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home', location: '/pages/home/home.html'}"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Events', icon: 'calendar', location: '/pages/events/events.html'}"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Demos', icon: '\uE1E4', location: '/pages/demos/demos.html'}"></div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'About', icon: '\uE125', location: '/pages/about/about.html'}"></div>
+        </div>
+    </div>
+
+    <div id="pageContent"></div>
+</body>
+</html>
