@@ -55,7 +55,9 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="css.txt" />
     <Content Include="default.html" />
+    <Content Include="html.txt" />
     <Content Include="images\building.jpg" />
     <Content Include="images\guitar.jpg" />
     <Content Include="images\MVSDG-150x150.scale-100.png" />
@@ -68,6 +70,7 @@
     <Content Include="images\universal-apps.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="MVSDG - Universal Windows Apps.pptx" />
     <Content Include="pages\about\about.css" />
     <Content Include="pages\about\about.html" />
     <Content Include="pages\about\about.js" />
